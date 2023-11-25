@@ -27,3 +27,45 @@ We also wanted to list the top and bottom performers for the district. To do thi
 ![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/08601aeb-f03a-45f1-b532-7cbf4728eb19)
 
 **Figure 4.** *Sorted dataframe displaying the top 5 and bottom 5 schools in the district.*
+
+___
+To determine each school's highest performing grade and subject, we created a new pandas dataframe that grouped the average reading and math test scores by each grade (9th grade - 12th grade) for each school.
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/7a84d6ff-16a8-4f5f-8b90-63bb974cbb82)
+
+**Figure 5.** *A breakdown of math performance for each grade per school.*
+
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/d1533e38-b2b5-4229-8c2f-4b7cdbeada1b)
+
+**Figure 6.** *A breakdown of reading performance for each grade per school.*
+__
+School funding is also an important factor in test competency. We hypothesized that schools with the most funding would achieve higher test scores. We defined funding as the amount of money given to the schools to spend per student. This was determined by taking the amount of funding given to a school divided by their student count. For instance, Bailey High School has 4,976 students and an overall budget of $3,124,928, so their per student budget would be $628. To test our hypothesis, we created four separate bins to categorize each school based off of funding per student. Each school was categorized into one of the following bins: <\\$585 per student, \\$585-630 per student, \\$630-645 per student, \\$645-680 per student. We designed a side-by-side comparison of the average reading and math scores per budget category.
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/8c8cb700-d6a2-411b-8214-d852d3a1fe72)
+
+**Figure 7.** *The bins used to determine funding categorization.*
+
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/f215b810-5cfb-46e9-b6af-043a6e013a13)
+
+**Figure 8.** *A side-by-side comparison of the funding categories and performance.*
+
+___
+We also wanted to examine school size and its effect on school performance. Similar to school funding, we binned the schools based on their size. The bins were as follows: Small (<1000 students), Medium (1000-2000 students), Large (2000-5000 students). We created a dataframe to examine the relationship between school size and test performance. 
+
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/f48fd38e-49c6-4e1b-986e-67496ee7c045)
+
+**Figure 9.** *The bins used to determine size categorization.*
+
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/0a807d2a-8123-4def-9dd2-52e8f2c29266)
+
+**Figure 10.** *Dataframe comparing the size categories and performance.*
+
+___
+Lastly, to evaluate the difference between test scores and school type (i.e., distric or charter), we made another pandas dataframe that showed the average test performance grouped by school type. 
+
+![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/def57f34-2ec4-476c-aa16-71522b609681)
+
+**Figure 11.** *Dataframe the type of school and performance.*
+
+## Analysis
+The data revealed that the top five highest performing schools were Cabrera High School, Thomas High School, Griffin High School, Wilson High School, and Pena High School with overall passing rates of 90.5% or higher. The five lowest performing schools were Rodriguez High School, Figueroa High School, Huang High School, Hernandez High School, Johnson High School.
+
+Between test performance and size, funding, and school type. Schools were divided into four categories based on their funding levels: $585, $585 - 630, $630 - 645, $645 - 680. The data revealed that schools with the lowest funding performed better on the standardized testing for math and reading. Schools were also divided into three groups based on their size: Small (<1000), Medium (1000-2000), Large (2000-5000). Schools with the medium sizes possessed the best test results, followed by the smallest schools, and then finally the large schools with an overall passing rate of 58.2%. Finally, schools were dichotomized as either charter or district types. The results showed that charter schools had the highest average scores with a passing rate of 90.4%.
