@@ -37,7 +37,7 @@ To determine each school's highest performing grade and subject, we created a ne
 ![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/d1533e38-b2b5-4229-8c2f-4b7cdbeada1b)
 
 **Figure 6.** *A breakdown of reading performance for each grade per school.*
-__
+___
 School funding is also an important factor in test competency. We hypothesized that schools with the most funding would achieve higher test scores. We defined funding as the amount of money given to the schools to spend per student. This was determined by taking the amount of funding given to a school divided by their student count. For instance, Bailey High School has 4,976 students and an overall budget of $3,124,928, so their per student budget would be $628. To test our hypothesis, we created four separate bins to categorize each school based off of funding per student. Each school was categorized into one of the following bins: <\\$585 per student, \\$585-630 per student, \\$630-645 per student, \\$645-680 per student. We designed a side-by-side comparison of the average reading and math scores per budget category.
 ![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/8c8cb700-d6a2-411b-8214-d852d3a1fe72)
 
