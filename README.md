@@ -11,7 +11,7 @@ First, the two csv files were imported and merged into one pandas dataframe. We 
 
 **Figure 1.** *The process of merging the dataframes using pandas.*
 
-___
+
 ## Basline Metrics
 Next, we obtained metrics that summarized the district's performance in math and reading including the overall percentage of students passing math and reading. After gathering these metrics, we put it into a single pandas dataframe to give a snapshot of district performance.
 
@@ -19,7 +19,7 @@ Next, we obtained metrics that summarized the district's performance in math and
 
 **Figure 2.** *A snapshot of math and reading performance in the school district.*
 
-___
+
 ## Individual School Performance
 Third, we calculated each of the individual school's average scores and passing rates (defined as a score of 70 or higher) in the district to examine each school's performance more closely. After these data were calculated, they were put into a pandas dataframe to get side-by-side comparison of each school.
 
@@ -27,7 +27,7 @@ Third, we calculated each of the individual school's average scores and passing 
 
 **Figure 3.** *A comparison of each school's average math score, reading score, math pass rate, reading pass rate, and overall pass rate.*
 
-___
+
 ## Top and Bottom Performers
 We also wanted to list the top and bottom performers for the district. To do this, we created a new pandas dataframe and sorted the values so that the top performing schools would be at the top, and the schools with the lowest pass rate would be at the bottom. We did the same for the schools with the lowest passing rate.
 
@@ -35,7 +35,7 @@ We also wanted to list the top and bottom performers for the district. To do thi
 
 **Figure 4.** *Sorted dataframe displaying the top 5 and bottom 5 schools in the district.*
 
-___
+
 ## Highest Subject Grades per School
 To determine each school's highest performing grade and subject, we created a new pandas dataframe that grouped the average reading and math test scores by each grade (9th grade - 12th grade) for each school.
 
@@ -46,7 +46,7 @@ To determine each school's highest performing grade and subject, we created a ne
 ![image](https://github.com/nicholaishaw/pandas-challenge/assets/135463220/d1533e38-b2b5-4229-8c2f-4b7cdbeada1b)
 
 **Figure 6.** *A breakdown of reading performance for each grade per school.*
-___
+
 ## School Funding and Test Scores
 School funding is also an important factor in test competency. We hypothesized that schools with the most funding would achieve higher test scores. We defined funding as the amount of money given to the schools to spend per student. This was determined by taking the amount of funding given to a school divided by their student count. For instance, Bailey High School has 4,976 students and an overall budget of $3,124,928, so their per student budget would be $628. To test our hypothesis, we created four separate bins to categorize each school based off of funding per student. Each school was categorized into one of the following bins: <$585 per student, $585-630 per student, $630-645 per student, $645-680 per student. We designed a side-by-side comparison of the average reading and math scores per budget category.
 
@@ -58,7 +58,7 @@ School funding is also an important factor in test competency. We hypothesized t
 
 **Figure 8.** *A side-by-side comparison of the funding categories and performance.*
 
-___
+
 ## School Size and Test Scores
 We also wanted to examine school size and its effect on school performance. Similar to school funding, we binned the schools based on their size. The bins were as follows: Small (<1000 students), Medium (1000-2000 students), Large (2000-5000 students). We created a dataframe to examine the relationship between school size and test performance. 
 
@@ -70,7 +70,7 @@ We also wanted to examine school size and its effect on school performance. Simi
 
 **Figure 10.** *Dataframe comparing the size categories and performance.*
 
-___
+
 ## District and Charter School Performance
 Lastly, to evaluate the difference between test scores and school type (i.e., distric or charter), we made another pandas dataframe that showed the average test performance grouped by school type. 
 
